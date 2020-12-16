@@ -15,7 +15,7 @@ authRouter.post('/signup', async (req, res, next) => {
       user: userRecord,
       token: userRecord.token
     };
-    res.status(200).json(output);
+    res.status(201).json(output);
   } catch (e) {
     next(e.message)
   }
@@ -36,7 +36,7 @@ authRouter.get('/users', bearerAuth, async (req, res, next) => {
 });
 
 authRouter.get('/secret', bearerAuth, async (req, res, next) => {
-  res.status(200).send("Welcome to the secret area!")
+  res.status(200).send('Welcome to the secret area!')
 });
 
 

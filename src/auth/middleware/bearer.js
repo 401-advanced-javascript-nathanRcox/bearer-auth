@@ -9,11 +9,11 @@ module.exports = async (req, res, next) => {
     if (!req.headers.authorization) { next('Invalid Login') }
 
     const token = req.headers.authorization.split(' ').pop();
+    // console.log('TOKEN:', token);
     const validUser = await users.authenticateWithToken(token);
-
     req.user = validUser;
     req.token = validUser.token;
-
+    next();
   } catch (e) {
     res.status(403).send('Invalid Login');;
   }

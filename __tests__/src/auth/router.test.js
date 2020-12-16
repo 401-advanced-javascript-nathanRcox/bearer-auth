@@ -42,7 +42,6 @@ describe('Auth Router', () => {
         expect(userObject.token).toBeDefined();
         expect(userObject.user._id).toBeDefined();
         expect(userObject.user.username).toEqual(users[userType].username)
-
       });
 
       it('can signin with bearer', async () => {
