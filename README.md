@@ -19,19 +19,22 @@
 
 #### .env requirements (where applicable)
 
-- `PORT` - 3000
-<!-- - `MONGODB_URI` - URL to the running mongo instance/db -->
+- `PORT`= 3000
+- `MONGODB_URI` = mongodb://localhost:27017/bearerauth
+- `SECRET` = dontlookatme
 
 #### How to initialize/run your application (where applicable)
+
+- `nodemon` from the command line or;
+- `node index.js`
 
 #### How to use your library (where applicable)
 
 #### Tests
 
-- How do you run tests?: I haven't made any yet, so I'll defer this question for later.
-- Any tests of note?: N/A.
+- How do you run tests?: All passed; tests written by Code Fellows. To run: `npm test` from the root.
+- Any tests of note?: I couldn't pass basic and bearer in the tests because I was missing an async in the route.
 - Describe any tests that you did not complete, that skipped, and etc: N/A.
 
 #### UML
-<!-- Doesn't yet exist -->
-![UML](LINK)
+![UML](./Assests/bearer-auth-UML.png)
