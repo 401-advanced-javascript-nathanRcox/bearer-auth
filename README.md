@@ -11,9 +11,9 @@
 
 ### Links and Resources
 
-- [CI/CD](LINK)
+- [CI/CD](https://github.com/401-advanced-javascript-nathanRcox/bearer-auth/actions)
 <!-- - [Back-end Server URL](http://xyz.com) (when applicable) -->
-- [Front-end Application](LINK)
+- [Front-end Application](https://nrc-bearer-auth.herokuapp.com/)
 
 ### Setup
 
